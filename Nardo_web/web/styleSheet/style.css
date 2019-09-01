@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 1, 2019, 3:06:32 PM
+    Author     : stevenNÏardo
+*/
+
+html, body {  
+    margin:0; 
+    padding:0; 
+    font-family: courier;
+}
+#navImg
+{
+    width: 30px;
+    position: fixed;
+    right: 20px;
+    top: 12px;
+}
+#title
+{
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+#titleBar
+{
+    min-width: 700px;
+    width: 100%;
+    background-color: grey;
+    position:fixed; 
+    top:0px;
+    z-index: 1; 
+}
+#nav
+{
+    position: fixed; 
+    top: 0px;
+    right: 0px;
+    text-align:right;
+    padding-top: 17px;
+}
+#content
+{
+    color: grey;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+#footer
+{
+    position: fixed;
+    background-color: grey;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#footerContent
+{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.dropHeader
+{
+    font-size: 20px;
+    color: white;
+}
+.dropContent
+{
+
+}
+.dropDown
+{
+
+}
+#navLinks 
+{
+    color: white;
+    margin-right: 65px;
+}
+#navLinks a
+{
+    text-decoration: none;
+}
