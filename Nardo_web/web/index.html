@@ -5,12 +5,15 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+
     <head>
-        <link rel="stylesheet" type="text/css" href="styleSheet/style.css">
+        <link rel="stylesheet" type="text/css" href="style/mystyle.css">
+        <link rel="icon" href="pics/bagIcon.png">
         <title>Shop Till You Drop</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+
     <body>
         <div id="titleBar">
 
@@ -19,22 +22,45 @@ and open the template in the editor.
             </div>
 
             <div id="nav">
-                <div id="navLinks">
-                    <a href="women.html" class="dropHeader ">Women's |</a>
-                    <a href="men.html" class="dropHeader ">Men's |</a>
+                <div class="dropdown">
+                    <a class="dropHeader" onclick="dropdown('womensDropdown')">Women's</a>
+                    <div class="dropContent" id="womensDropdown">
+                        <a>Shirts</a> <br/>
+                        <a>Bottoms</a> <br/>
+                        <a>Jewelry</a> <br/>
+                        <a>Beauty</a>
+                    </div>
                 </div>
-                <img src="imgs/bagIcon.png" id="navImg" class="dropHeader">  </img>
+                <div class="dropdown">
+                    <a class="dropHeader " onclick="dropdown('mensDropdown')">Men's</a>
+                    <div class="dropContent" id="mensDropdown">
+                        <a>Shirts</a> <br/>
+                        <a>Bottoms</a> <br/>
+                        <a>Socks</a> <br/>
+                        <a>Shoes</a> 
+
+                    </div>
+                </div>
             </div>
 
         </div>
+
         <div id="content">
-            Your one stop shop for all you need! We've got everything from tops and bottoms to makeup and jewelry.
+            <img src="pics/store.jpg" class="pageImage" alt="StoreImage">
+
+            <div id="text">
+                Your one stop shop for all you need! We've got everything from tops and bottoms to makeup and jewelry. We carry both men's and women's clothing as classically categorized, but all of our clothing is unisex. <br/><br/>Don't forget, spend $50 and get free shipping! Feel free to visit <a href="https://www.usps.com">USPS</a> for any shipping particulars.
+            </div>
         </div>
 
         <footer id="footer">
             <div id="footerContent">
                 Steven Nardo
             </div>
+
         </footer>
+
+        <script src="js/dropdown.js"></script>
     </body>
+
 </html>
