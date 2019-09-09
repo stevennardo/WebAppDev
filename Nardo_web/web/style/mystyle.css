@@ -15,7 +15,7 @@ html, body
 }
 #titleBar
 {
-    min-width: 600px;
+    min-width: 700px;
     width: 100%;
     background-color: grey;
     position:fixed; 
@@ -30,7 +30,6 @@ html, body
 }
 #content
 {
-    color: grey;
     padding-top: 60px;
     padding-bottom: 20px;
     margin: 30px;
@@ -53,9 +52,7 @@ html, body
 }
 .dropHeader
 {
-    font-size: 20px;
-    color: white;
-    font-style: italic;
+    
 }
 .dropContent
 {
@@ -81,22 +78,31 @@ html, body
 {
     max-width: 600px;
     height: auto;
-    margins: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 #text
 {
     color: #e75480;
 }
-a:link
+
+.header
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    margin-right: 3ex;
+}
+
+#text a:link
 {
     color: #e75480;
 }
-a:visited 
+#text a:visited 
 {
     color: #930050;
 }
@@ -105,3 +111,4 @@ a:hover
     color: #F60B8A;
     font-style: italic;
 }
+

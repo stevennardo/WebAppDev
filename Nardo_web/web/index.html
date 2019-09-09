@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
 
     <head>
@@ -12,6 +7,33 @@ and open the template in the editor.
         <title>Shop Till You Drop</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .header
+            {
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                font-style: italic;
+            }
+            h2
+            {
+                color: #e75480;
+            }
+            #titleBar
+            {
+                min-width: 700px;
+            }
+            #titleBar a
+            {
+                color: white;
+            }
+            #titleBar a:hover
+            {
+                color: #F60B8A;
+                font-style: oblique;
+            }
+        </style>
     </head>
 
     <body>
@@ -22,6 +44,8 @@ and open the template in the editor.
             </div>
 
             <div id="nav">
+                <a href="#/home" class="header">Home</a>
+                <a href="#/blog" class="header">Blog</a>
                 <div class="dropdown">
                     <a class="dropHeader" onclick="dropdown('womensDropdown')">Women's</a>
                     <div class="dropContent" id="womensDropdown">
@@ -60,7 +84,25 @@ and open the template in the editor.
 
         </footer>
 
-        <script src="js/dropdown.js"></script>
+        <script src="js/dropdownFw.js"></script>
+        <script src="js/routeFw.js"></script>
+        <script src="js/components/home.js"></script>
+        <script src="js/components/blog.js"></script>
+
+        <script>
+
+                        "use strict";
+
+                        var myRoutes = [];
+
+                        myRoutes['/'] = home;  // home is a function stored in js/components/home.js
+                        myRoutes['/home'] = home;
+                        myRoutes['/blog'] = blog;
+
+                        var parameters = {routeArray: myRoutes, contentId: "content"};
+                        var myRoutes = routeFw(parameters);
+
+        </script>
     </body>
 
 </html>
