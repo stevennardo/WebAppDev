@@ -8,23 +8,29 @@ function blog(id) {
             </p>
             <p>
             In this homework I learned about HTML, CSS, and how to publish a web page to the Linux server; I didn't know we had access to tools like that.
+            
             The parts that I found hard or confusing were all the numerous example code files. I found it very confusing and time consuming piecing all the elements together, especially when some sample code requires you to rebuild your site multiple times before reaching the end result. Also, not knowing much about the code itself, being only taught how the sample code should work, not the code concepts and not working toward building the site myself.
             </p>
-            <h2> HW 2 Routing & DB </h2>
+            <h2> HW 2 Database </h2>
             <p>
             My database experience consists of some Ruby coding via Chef.io.
             </p>
             <p>
+            I thought it was the easiest part of the homework, creating the tables was very straight forward and the GUI made it very simple. 
+            </p>
+            <ul>
+            <li>
+            To see my database work, click <a href = "files/HW2.docx" >here</a>.
+            </li>
+            </ul>
+            <h2> HW 2 Routing </h2>
+            <p>
             In this homework I learned what routing was and how that relates to websites, also using more than one file for a webpage. 
-            The parts that I found easy were 
             The parts that I found hard or confusing were the same, it is very disorienting trying to piece together code from multiple files and folders without being taught really how it works and what it's doing. Also, getting the CSS to work properly, a lot of my code was being overwritten for whatever reason and getting what I want to look how I want took some overriding.
             </p>
             <ul>
             <li>
             To see how my routing works, click on these icons: home, then blog, then home again.
-            </li>
-            <li>
-            To see my database work, click <a href = "files/HW2.docx" >here</a>.
             </li>
             </ul>
             <h2> HW 3 Web API </h2>
