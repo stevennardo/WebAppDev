@@ -33,6 +33,8 @@ function blog(id) {
             To see how my routing works, click on these icons: home, then blog, then home again.
             </li>
             </ul>
+    
+    <!-- 
             <h2> HW 3 Web API </h2>
             <p>
             In this homework I learned...
@@ -168,7 +170,7 @@ function blog(id) {
             To see my tutorial, click on "proposal", "demo", and "log" under the tutorial icon
             in the navigation bar.
             </li>
-            </ul>
+            </ul> -->
             `;
             document.getElementById(id).innerHTML = content;
 }
