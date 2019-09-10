@@ -9,7 +9,7 @@ function blog(id) {
             <p>
             In this homework I learned about HTML, CSS, and how to publish a web page to the Linux server; I didn't know we had access to tools like that.
             
-            The parts that I found hard or confusing were all the numerous example code files. I found it very confusing and time consuming piecing all the elements together, especially when some sample code requires you to rebuild your site multiple times before reaching the end result. Also, not knowing much about the code itself, being only taught how the sample code should work, not the code concepts and not working toward building the site myself.
+            The parts that I found hard or confusing were all the numerous example code files. I found it confusing and time consuming piecing all the elements together, especially when some sample code requires you to rebuild your site multiple times before reaching the end result. Also, not knowing much about the code itself, only going over how the sample code works, and not toward building the site myself.
             </p>
             <h2> HW 2 Database </h2>
             <p>
@@ -25,8 +25,8 @@ function blog(id) {
             </ul>
             <h2> HW 2 Routing </h2>
             <p>
-            In this homework I learned what routing was and how that relates to websites, also using more than one file for a webpage. 
-            The parts that I found hard or confusing were the same, it is very disorienting trying to piece together code from multiple files and folders without being taught really how it works and what it's doing. Also, getting the CSS to work properly, a lot of my code was being overwritten for whatever reason and getting what I want to look how I want took some overriding.
+            In this homework I learned what routing was and how that relates to websites, also using more than one file for a webpage as well as linking all the aspects together. 
+            The parts that I found hard or confusing were the same, it is disorienting trying to piece together code from multiple files and folders, I'm hoping to learn more about what it's doing. Also, getting the CSS to work properly, a lot of my code was being overwritten for various reasons and getting what I want to look how I want took some overriding via in file and in text style code.
             </p>
             <ul>
             <li>
