@@ -26,7 +26,7 @@ public class dataTableView {
             stmt.close();
         } catch (Exception e) {
             StringData sd = new StringData();
-            sd.errorMsg = "Exception thrown in WebUserView.allUsersAPI(): " + e.getMessage();
+            sd.errorMsg = "Exception thrown in dataTableView.allUsersAPI(): " + e.getMessage();
             sdl.add(sd);
         }
         return sdl;
