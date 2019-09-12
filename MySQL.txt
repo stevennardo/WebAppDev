@@ -1,0 +1,3 @@
+User =	tug44890
+Password = ohphiehe
+DB =	FA19_3308_tug44890
