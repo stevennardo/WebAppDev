@@ -1,4 +1,4 @@
-package model.dataTable;
+package model.clothingInventory;
 
 import java.util.ArrayList;
 import java.sql.ResultSet;

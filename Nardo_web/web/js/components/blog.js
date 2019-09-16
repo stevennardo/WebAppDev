@@ -34,21 +34,22 @@ function blog(id) {
             </li>
             </ul>
     
-    <!-- 
+     
             <h2> HW 3 Web API </h2>
             <p>
-            In this homework I learned...
-            The parts that I found easy were...
-            The parts that I found hard or confusing were...
+            In this homework I learned how websites and databases communicate and how data is transferred. Learning how the coding languages as well as the concepts of the front and back end come together and use this method to become things used everyday.
+            The parts that I found easy were connecting to the database itself.
+            The parts that I found hard or confusing were debugging the database errors as well as the API errors, also the SQL select statements. 
             </p>
             <ul>
             <li>
-            To invoke my user list Web API, click <a target = "_blank" href = "webAPIs/listUsersAPI.jsp" > here </a>.
+            To invoke my user list Web API, click <a target = "_blank" href = "webAPIs/listUsersAPI.jsp" >here</a>.
             </li>
             <li>
-            To invoke my [other] list Web API, click <a target = "_blank" href = "webAPIs/listOtherAPI.jsp" > here </a>.
+            To invoke my clothing inventory list Web API, click <a target = "_blank" href = "webAPIs/inventoryAPI.jsp" >here</a>.
             </li>
             </ul>
+    <!--
             <h2> HW 4 Display Data </h2>
             <p>
             In this homework I learned...
@@ -70,7 +71,7 @@ function blog(id) {
             <ul>
             <li>
             To see how my JavaScript code works,
-            click <a target = "_blank" href = "05_JS/index.html" > here </a>.
+            click <a target = "_blank" href = "05_JS/index.html" >here</a>.
             </li>
             </ul>
             <h2> Tutorial Proposal </h2>
@@ -80,13 +81,13 @@ function blog(id) {
             </p>
             <ul>
             <li>
-            Click <a target = "_blank" href = "tutorial/proposal.pdf" > here </a> for my Tutorial Proposal, 
+            Click <a target = "_blank" href = "tutorial/proposal.pdf" >here</a> for my Tutorial Proposal, 
             a pdf that describes the consumer / provider style JS code I might like
             to implement.This code would do a fancier job of displaying my data.The pdf
             should provide links to pages that inspired my idea.
             </li>
             <li>
-            Click <a target = "_blank" href = "tutorial/poc.pdf" > here </a> to see my Proof of Concept, 
+            Click <a target = "_blank" href = "tutorial/poc.pdf" >here</a> to see my Proof of Concept, 
             code not converted to consumer / provider style yet, code just copy / pasted and modified
             so that it works locally and published and demonstrates the idea you had in mind.
             </li>

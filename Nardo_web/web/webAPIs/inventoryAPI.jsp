@@ -1,8 +1,8 @@
 <%@page contentType="application/json; charset=UTF-8" pageEncoding="UTF-8"%> 
 
 <%@page language="java" import="dbUtils.*" %>
-<%@page language="java" import="model.dataTable.*" %> 
-<%@page language="java" import="view.dataTableView" %> 
+<%@page language="java" import="model.clothingInventory.*" %> 
+<%@page language="java" import="view.inventoryView" %> 
 <%@page language="java" import="com.google.gson.*" %>
 
 <%
@@ -16,7 +16,7 @@
     if (list.dbError.length() == 0) { // if got good DB connection,
 
         System.out.println("*** Ready to call allUsersAPI");
-        list = dataTableView.allUsersAPI(dbc);
+        list = inventoryView.allUsersAPI(dbc);
     }
 
       dbc.close(); // EVERY code path that opens a db connection, must also close it - no DB Conn leaks.

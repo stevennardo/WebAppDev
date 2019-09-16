@@ -1,14 +1,15 @@
 package view;
 
 // classes imported from java.sql.*
+import model.clothingInventory.StringData;
+import model.clothingInventory.StringDataList;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import model.dataTable.*;
 
 // classes in my project
 import dbUtils.*;
 
-public class dataTableView {
+public class inventoryView {
 
     public static StringDataList allUsersAPI(DbConn dbc) {
 
@@ -16,7 +17,7 @@ public class dataTableView {
         //ResultSet results = null;
         StringDataList sdl = new StringDataList();
         try {
-            String sql = "SELECT web_user_id, user_name, img_url, description, birthday, user_size, user_id FROM data_table ORDER BY web_user_id";  // you always want to order by something, not just random order.
+            String sql = "SELECT clothing_inventory.web_user_id, img_url, description, color, item_category, discount, item_id FROM web_user, clothing_inventory WHERE web_user.web_user_id = clothing_inventory.web_user_id ORDER BY web_user_id;";  // you always want to order by something, not just random order.
             PreparedStatement stmt = dbc.getConn().prepareStatement(sql);
             ResultSet results = stmt.executeQuery();
             while (results.next()) {
