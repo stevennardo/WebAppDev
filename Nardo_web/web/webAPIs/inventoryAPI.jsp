@@ -6,7 +6,7 @@
 <%@page language="java" import="com.google.gson.*" %>
 
 <%
-    //http://cis-linux2.temple.edu:8080/FA19_3308_tug44890/webAPIs/dataTableAPI.jsp (don't forget to tunnel in)
+    //http://cis-linux2.temple.edu:8080/FA19_3308_tug44890/webAPIs/inventoryAPI.jsp (don't forget to tunnel in)
     // default constructor creates nice empty StringDataList with all fields "" (empty string, nothing null).
     StringDataList list = new StringDataList();
 
