@@ -33,10 +33,11 @@
                 color: #F60B8A;
                 font-style: oblique;
             }
-            .header
+            .dropContent a
             {
-                padding-right: 15px;
+                text-decoration: none;
             }
+            
         </style>
     </head>
 
@@ -51,17 +52,15 @@
                 <a href="#/home" class="header">Home</a>
                 <a href="#/blog" class="header">Blog</a>
                 <div class="dropdown">
-                    <a class="dropHeader" onclick="dropdown('womensDropdown')">Women's</a>
-                    <div class="dropContent" id="womensDropdown">
-                        <a>Shirts</a> <br/>
-                        <a>Bottoms</a> <br/>
-                        <a>Jewelry</a> <br/>
-                        <a>Beauty</a>
+                    <a class="dropHeader header" onclick="dropdown('searchDropdown')">Search</a>
+                    <div class="dropContent" id="searchDropdown">
+                        <a href="#/user">Users</a> <br/>
+                        <a href="#/inv">Inventory</a> 
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a class="dropHeader " onclick="dropdown('mensDropdown')">Men's</a>
-                    <div class="dropContent" id="mensDropdown">
+                    <a class="dropHeader header" onclick="dropdown('clothesDropdown')">Clothes</a>
+                    <div class="dropContent" id="clothesDropdown">
                         <a>Shirts</a> <br/>
                         <a>Bottoms</a> <br/>
                         <a>Socks</a> <br/>
@@ -92,6 +91,8 @@
         <script src="js/routeFw.js"></script>
         <script src="js/components/home.js"></script>
         <script src="js/components/blog.js"></script>
+        <script src="js/components/inventory.js"></script>
+        <script src="js/components/user.js"></script>
 
         <script>
 
@@ -102,6 +103,8 @@
                         myRoutes['/'] = home;  // home is a function stored in js/components/home.js
                         myRoutes['/home'] = home;
                         myRoutes['/blog'] = blog;
+                        myRoutes['/inventory'] = inventory;
+                        myRoutes['/user'] = user;
 
                         var parameters = {routeArray: myRoutes, contentId: "content"};
                         var myRoutes = routeFw(parameters);
