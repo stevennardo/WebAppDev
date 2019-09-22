@@ -71,7 +71,7 @@ html, body
 {
     position: relative;  
     display: inline-block;
-    margin-right: 3ex;
+    
     cursor: pointer;
 }
 .pageImage
@@ -112,3 +112,7 @@ a:hover
     font-style: italic;
 }
 
+table
+{
+    padding-top: 60px;
+}

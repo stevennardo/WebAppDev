@@ -49,7 +49,14 @@ function makeTable(dataList, divId) {
 
 // Create a new HTML table (DOM object) 
     var myTable = document.createElement("table");
-    var myHeadings = Object.keys(dataList[0]);
+    
+    var myHeadings = {};
+    
+    var obj = dataList[0];
+    for (var prop in obj) {
+        myHeadings.push(prop);
+    }
+    
     console.log(myHeadings);
 // NEW PART. Add a row that will hold column headings.
     var myHeaderRow = document.createElement("tr");

@@ -6,7 +6,7 @@
 
 function user(id)
 {
-    var content =`<div id="inventoryTable">usr</div>`;
-    
+    var content = `<div id="inventoryTable">usr</div>`;
+
     document.getElementById(id).innerHTML = content;
 }

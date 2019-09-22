@@ -59,7 +59,7 @@ function dropdown(parametersInput)
 
     window.onclick = function (event)
     {
-        if (!event.target.matches('.' + dropHeaderStyle))
+        if (!(event.target.matches('.' + dropHeaderStyle)))
         {
             hideAllDropContents();
         }

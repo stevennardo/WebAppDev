@@ -22,7 +22,7 @@
             }
             #titleBar
             {
-                min-width: 750px;
+                min-width: 760px;
             }
             #titleBar a
             {
@@ -37,7 +37,7 @@
             {
                 text-decoration: none;
             }
-            
+
         </style>
     </head>
 
@@ -55,15 +55,15 @@
                     <a class="dropHeader header" onclick="dropdown('searchDropdown')">Search</a>
                     <div class="dropContent" id="searchDropdown">
                         <a href="#/user">Users</a> <br/>
-                        <a href="#/inv">Inventory</a> 
+                        <a href="#/inventory">Inventory</a> 
                     </div>
                 </div>
                 <div class="dropdown">
                     <a class="dropHeader header" onclick="dropdown('clothesDropdown')">Clothes</a>
                     <div class="dropContent" id="clothesDropdown">
-                        <a>Shirts</a> <br/>
+                        <a>Tops</a> <br/>
                         <a>Bottoms</a> <br/>
-                        <a>Socks</a> <br/>
+                        <a>Accessories</a> <br/>
                         <a>Shoes</a> 
 
                     </div>
@@ -89,6 +89,8 @@
 
         <script src="js/dropdownFw.js"></script>
         <script src="js/routeFw.js"></script>
+        <script src="js/ajax.js"></script>
+        <script src="js/makeTable.js"></script>
         <script src="js/components/home.js"></script>
         <script src="js/components/blog.js"></script>
         <script src="js/components/inventory.js"></script>
@@ -108,6 +110,17 @@
 
                         var parameters = {routeArray: myRoutes, contentId: "content"};
                         var myRoutes = routeFw(parameters);
+
+                        // MAIN PROGRAM
+                        ajax("webAPIs/listUsersAPI.jsp", callBack, "listHere");
+
+                        function callBack(httpRequest) {
+                            console.log(httpRequest.responseText);  // car list as text
+                            var list = JSON.parse(httpRequest.responseText);
+                            console.log(list);  // car list as an array of objects
+                            // parameters: list to sort, initial sort property, id where HTML table should be placed.
+                            makeTable(list, "inventoryTable");
+                        }
 
         </script>
     </body>
