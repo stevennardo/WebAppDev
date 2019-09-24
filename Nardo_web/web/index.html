@@ -37,6 +37,10 @@
             {
                 text-decoration: none;
             }
+            #inventoryTable img
+            {
+                max-width: 100px;
+            }
 
         </style>
     </head>
@@ -112,15 +116,7 @@
                         var myRoutes = routeFw(parameters);
 
                         // MAIN PROGRAM
-                        ajax("webAPIs/listUsersAPI.jsp", callBack, "listHere");
-
-                        function callBack(httpRequest) {
-                            console.log(httpRequest.responseText);  // car list as text
-                            var list = JSON.parse(httpRequest.responseText);
-                            console.log(list);  // car list as an array of objects
-                            // parameters: list to sort, initial sort property, id where HTML table should be placed.
-                            makeTable(list, "inventoryTable");
-                        }
+                        
 
         </script>
     </body>

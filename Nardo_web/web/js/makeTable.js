@@ -24,6 +24,17 @@ function makeTable(dataList, divId) {
                     return str.toUpperCase();
                 });
     }
+    
+    function formatHeading(tr, str)
+    {
+        str = unCamelCase(str);
+        console.log(str);
+        
+        var th = document.createElement("th");
+        th.innerHTML = str;
+        tr.appendChild(th);
+        th.style.textAlign = "center";
+    }
 
     function formatData(tr, data) {
 
@@ -35,6 +46,7 @@ function makeTable(dataList, divId) {
         var td = document.createElement("td");
         td.innerHTML = data;
         tr.appendChild(td);
+        var tempData = data.toString();
 
         if (data.length === 0) {
             return; // no value coming in - do nothing
@@ -42,34 +54,34 @@ function makeTable(dataList, divId) {
             td.innerHTML = formatCurrency(data);
             td.style.textAlign = "right";
             return;
-        } else if (data.includes(".jpg") || data.includes(".png")) {
+        } else if (tempData.indexOf(".jpg") !== -1 || tempData.indexOf(".png") !== -1) {
             td.innerHTML = "<img src='" + data + "'>";
         }
     }
 
 // Create a new HTML table (DOM object) 
     var myTable = document.createElement("table");
-    
-    var myHeadings = {};
-    
-    var obj = dataList[0];
-    for (var prop in obj) {
-        myHeadings.push(prop);
-    }
-    
-    console.log(myHeadings);
-// NEW PART. Add a row that will hold column headings.
+    //console.log(myTable !== null);
+
     var myHeaderRow = document.createElement("tr");
+    var myHeadings = [];
+
+    var obj = dataList[0];
+    for (var title in obj) {
+        console.log(title);
+        myHeadings.push(title);
+    }
+
+
+// NEW PART Add a row that will hold column headings.
+
     for (var x in myHeadings)
     {
-        var heading = unCamelCase(myHeadings[x]);
+        var heading = formatHeading(myHeaderRow, myHeadings[x]);
         console.log(heading);
-        addToRow("th", myHeaderRow, heading, "left");
     }
-//    addToRow("th", myHeaderRow, "Web User Id", "left");
-//    addToRow("th", myHeaderRow, "User Email", "left");
-//    addToRow("th", myHeaderRow, "Image", "center");
-//addToRow("th", myHeaderRow, "Price", "right");
+
+    console.log(myHeaderRow);
 
     myTable.appendChild(myHeaderRow);
 
@@ -79,15 +91,15 @@ function makeTable(dataList, divId) {
         var tableRow = document.createElement("tr");
         myTable.appendChild(tableRow);
         var obj = dataList[i];
-
+        console.log(tableRow);
         for (var prop in obj)
         {
             //addToRow("td", tableRow, obj[prop], "left");
             formatData(tableRow, obj[prop]);
+            //addToRow("td", tableRow, obj[prop], "left");
         }
     }
 
-
-    //return myTable;
+    console.log(myTable);
     document.getElementById(divId).appendChild(myTable);
 }

@@ -112,7 +112,26 @@ a:hover
     font-style: italic;
 }
 
-table
-{
-    padding-top: 60px;
+table {
+    margin:auto;     /* auto makes left and right margins the same, means centered */
+    margin-top: 1em; /* em means size of capital M */
+}
+
+td {
+    padding: 4px;
+    background-color: #f3d9e1;
+    font-size:13px;
+}
+
+th {  /* style of td elements that are inside of a thead element */
+    padding:4px;
+    padding-top:8px;
+    background-color: #E75480;
+    font-weight: bold;
+    font-size:16px;
+    white-space: nowrap; /* do not want multi word column headings (or sort icon) to wrap */
+}
+
+td img {
+    width: 160px;
 }
