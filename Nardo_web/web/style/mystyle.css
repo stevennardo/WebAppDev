@@ -12,6 +12,7 @@ html, body
     padding-top: 10px;
     padding-bottom: 15px;
     float: left;
+    text-decoration: none;
 }
 #titleBar
 {
@@ -134,4 +135,7 @@ th {  /* style of td elements that are inside of a thead element */
 
 td img {
     width: 160px;
+}
+th img{
+    width: 17px;
 }

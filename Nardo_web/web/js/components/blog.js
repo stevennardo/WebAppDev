@@ -49,19 +49,19 @@ function blog(id) {
             To invoke my clothing inventory list Web API, click <a target = "_blank" href = "webAPIs/inventoryAPI.jsp" >here</a>.
             </li>
             </ul>
-    <!--
+    
             <h2> HW 4 Display Data </h2>
             <p>
-            In this homework I learned...
-            The parts that I found easy were...
-            The parts that I found hard or confusing were...
+            In this homework I learned the complexities of click sort as well as how to implement it with extracted database data.
+            The parts that I found easy were building the table from the data itself.
+            The parts that I found very hard were implementing the sort as well as the search filter. It was very difficult for me to understand the sample code in relation to my own code as well as understand the sample code in general, many problems I was having was because of this difference of code. The search field was the hardest part it got extremely hard to keep track of the comparisons and other factors amidst all the other code and elements; I wasn't able to complete it.
             </p>
             <ul>
             <li>
-            To see my user and [other] list pages, click under the search icon
-            in the navigation bar.
+            To see my user and inventory list pages, click under the search icon in the navigation bar.
             </li>
             </ul>
+    <!--
             <h2> HW 5 JavaScript </h2>
             <p>
             In this homework I learned...
