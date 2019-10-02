@@ -18,19 +18,8 @@ function inventory(id)
         console.log(httpRequest.responseText);  // list as text
         var list = JSON.parse(httpRequest.responseText);
         console.log(list);  // list as an array of objects
-        var dataList = Object.values(list);
-        console.log(dataList[1]);
 
-        /*"itemId": "1",
-         "itemCategory": "patteredShirt",
-         "imgUrl": "https://cdn.shopify.com/s/files/1/1832/4455/products/1153_S17_IconShirt_MendocinoBlue_FR.jpg",
-         "description": "Blue patterned button down",
-         "color": "Blue",
-         "discount": "$5.00",
-         "webUserId": "1",
-         "errorMsg": ""*/
-
-        dataList = dataList[1];
+        var dataList = list.dataTableList;
         var newList = []; // empty array
         for (var i = 0; i < dataList.length; i++) {
 
@@ -45,6 +34,15 @@ function inventory(id)
         }
 
         console.log(newList);
-        makeTable(newList, "inventoryTable", "pics/sortIcon.png", "itemId", document.getElementById("inventoryInput"));
+
+        makeTable({
+            dataList: newList,
+            divId: "inventoryTable",
+            sortPic: "pics/sortIcon.png",
+            sortProp: "itemId",
+            textFilter: "document.getElementById(\"inventoryInput\")",
+            reverse: true
+        });
+
     }
 }

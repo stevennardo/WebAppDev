@@ -19,17 +19,7 @@ function user(id)
         var list = JSON.parse(httpRequest.responseText);
         console.log(list);  // list as an array of objects
         var dataList = Object.values(list);
-        
-        /*"webUserId": "1",
-      "userEmail": "user1@email.com",
-      "userPassword": "p",
-      "birthday": "01/01/1998",
-      "membershipFee": "",
-      "image": "",
-      "userRoleId": "1",
-      "userRoleType": "Client",
-      "errorMsg": ""*/
-       
+
         dataList = dataList[1];
         var newList = []; // empty array
         for (var i = 0; i < dataList.length; i++) {
@@ -46,6 +36,14 @@ function user(id)
         }
 
         console.log(newList);
-        makeTable(newList, "userTable", "pics/sortIcon.png", "webUserId", document.getElementById("userInput"));
+
+        makeTable({
+            dataList: newList,
+            divId: "userTable",
+            sortPic: "pics/sortIcon.png",
+            sortProp: "webUserId",
+            textFilter: document.getElementById("userInput"),
+            reverse: true
+        });
     }
 }

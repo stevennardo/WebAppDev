@@ -59,7 +59,8 @@
                     <a class="dropHeader header" onclick="dropdown('searchDropdown')">Search</a>
                     <div class="dropContent" id="searchDropdown">
                         <a href="#/user">Users</a> <br/>
-                        <a href="#/inventory">Inventory</a> 
+                        <a href="#/inventory">Inventory</a> <br/>
+                        <a href="#/showPage">Slide Show</a> 
                     </div>
                 </div>
                 <div class="dropdown">
@@ -99,6 +100,8 @@
         <script src="js/components/blog.js"></script>
         <script src="js/components/inventory.js"></script>
         <script src="js/components/user.js"></script>
+        <script src="js/components/showPage.js"></script>
+        <script src="js/slideShow.js"></script>
 
         <script>
 
@@ -111,12 +114,13 @@
                         myRoutes['/blog'] = blog;
                         myRoutes['/inventory'] = inventory;
                         myRoutes['/user'] = user;
+                        myRoutes['/showPage'] = showPage;
 
                         var parameters = {routeArray: myRoutes, contentId: "content"};
                         var myRoutes = routeFw(parameters);
 
                         // MAIN PROGRAM
-                        
+
 
         </script>
     </body>
