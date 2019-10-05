@@ -5,6 +5,11 @@ function slideShowCreator(parameters)
     var list = parameters.list;
     var picProp = parameters.picProp;
     var captionPropName = parameters.captionPropName;
+    
+    if(parameters.color) //optional, default is in external style sheet
+    {
+        slideShow.style.backgroundColor = parameters.color;
+    }
 
     var div = document.createElement("div");
     slideShow.appendChild(div);

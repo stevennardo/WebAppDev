@@ -1,6 +1,12 @@
 
 function makeTable(params) {
 
+/*showID: "slide2Id", // id in which to render slideshow,
+            list: list2.dataTableList, // array of objects with image and caption
+            picProp: "imgUrl",
+            captionPropName: "description"*/
+
+
 // Add data as th or td (based on eleType) to row of HTML table.
     function addToRow(eleType, row, data, alignment) {
         var ele = document.createElement(eleType);
@@ -79,7 +85,7 @@ function makeTable(params) {
                 // the keyword 'this' means the DOM element that was clicked.
                 console.log("SORTING by " + this.sortOrder + " -  this.sortReverse is " + this.sortReverse);
                 sort(list, this.sortOrder, this.sortReverse);
-                fillTableRows(myTable, list); // places sorted data from list into tbody of table.
+                fillTableRows(list,myTable, ""); // places sorted data from list into tbody of table.
                 this.sortReverse = !this.sortReverse;
                 console.log("SORTed sortReverse is now " + this.sortReverse);
             };

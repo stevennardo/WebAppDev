@@ -54,44 +54,26 @@ function blog(id) {
             <p>
             In this homework I learned the complexities of click sort as well as how to implement it with extracted database data.
             The parts that I found easy were building the table from the data itself.
-            The parts that I found very hard were implementing the sort as well as the search filter. It was very difficult for me to understand the sample code in relation to my own code as well as understand the sample code in general, many problems I was having was because of this difference of code. The search field was the hardest part it got extremely hard to keep track of the comparisons and other factors amidst all the other code and elements; I wasn't able to complete it.
+            The parts that I found very hard were implementing the sort as well as the search filter. It was hard for me to understand the directions and it was very difficult for me to understand the sample code in relation to my own code as well as understand the sample code in general, many problems I was having was because of this difference of code. The search field was the hardest part it got extremely hard to keep track of the comparisons and other factors amidst all the other code and elements; I wasn't able to complete it.
             </p>
             <ul>
             <li>
             To see my user and inventory list pages, click under the search icon in the navigation bar.
             </li>
             </ul>
-    <!--
+    
             <h2> HW 5 JavaScript </h2>
             <p>
-            In this homework I learned...
-            The parts that I found easy were...
-            The parts that I found hard or confusing were...
+            In this homework I learned how to code a slideshow using JavaScript not just HTML and CSS
+            The parts that I found easy were using the JSON data for the slide show.
+            The parts that I found hard or confusing were the directions and what exactly needed to be done in order to receive full credit.
             </p>
             <ul>
             <li>
-            To see how my JavaScript code works,
-            click <a target = "_blank" href = "05_JS/index.html" >here</a>.
+            To see how my slideshow works, click under the search icon in the navigation bar.
             </li>
-            </ul>
-            <h2> Tutorial Proposal </h2>
-            <p>
-            Every student created a Tutorial Proposal (in lab activity),
-            even if they will not choose option B, Tutorial.
-            </p>
-            <ul>
-            <li>
-            Click <a target = "_blank" href = "tutorial/proposal.pdf" >here</a> for my Tutorial Proposal, 
-            a pdf that describes the consumer / provider style JS code I might like
-            to implement.This code would do a fancier job of displaying my data.The pdf
-            should provide links to pages that inspired my idea.
-            </li>
-            <li>
-            Click <a target = "_blank" href = "tutorial/poc.pdf" >here</a> to see my Proof of Concept, 
-            code not converted to consumer / provider style yet, code just copy / pasted and modified
-            so that it works locally and published and demonstrates the idea you had in mind.
-            </li>
-            </ul>
+            </ul><!--
+    
             <h2> HW 6 Delete </h2>
             <p>
             In this homework I learned...
