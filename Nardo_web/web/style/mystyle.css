@@ -16,7 +16,7 @@ html, body
 }
 #titleBar
 {
-    min-width: 700px;
+    min-width: 900px;
     width: 100%;
     background-color: grey;
     position:fixed; 

@@ -1,7 +1,7 @@
 function blog(id) {
 
 // ` this is a "back tick". Use it to define multi-line strings in JavaScript.
-    var content = `
+var content = `
             <h2> HW 1 Home Page </h2>
             <p>
             My web development experience consists of some HTML, CSS, and JavaScript coding in high school, but I don't remember much if any of it.
@@ -72,25 +72,30 @@ function blog(id) {
             <li>
             To see how my slideshow works, click under the search icon in the navigation bar.
             </li>
-            </ul><!--
+            </ul>
     
-            <h2> HW 6 Delete </h2>
+            <h2> HW 6 Logon </h2>
             <p>
-            In this homework I learned...
-            The parts that I found easy were...
-            The parts that I found hard or confusing were...
+            In this homework I learned what it takes to use a database to fetch user information to log in, log off, and gather profile info
+            The parts that I found easy were setting up the pages to get data injected into them.
+            The parts that I found hard or confusing were getting the API to return exactly what was needed and how to debug output I didn't understand/recognise.
+            To see the web APIs click the following links:    
             </p>
             <ul>
-            <li>
-            To see how delete user works, click on the delete icon next to a
-            user in my user listing (after clicking on "user" under the
-                    search icon).
-            </li>
-            <li>
-            To see how delete [other] works, click on the delete icon next to a
-            record in my [other] listing.
-            </li>
+                <li>
+                   Log On: <a target = "_blank" href = "webAPIs/logonAPI.jsp?email=user1@email.com&pass=p" >Login</a>
+                </li>
+                 <li>
+                   Get Profile: <a target = "_blank" href = "webAPIs/getProfileAPI.jsp" >Profile</a>
+                </li>
+                <li>
+                   Log Off: <a target = "_blank" href = "webAPIs/logoffAPI.jsp" >Log Out</a>
+                </li>
             </ul>
+            <p>
+            To use the account tab, valid credentials are email: user1@email.com and password: p
+            </p>
+    <!--
             <h2> HW 7 Log On </h2>
             <p>
             In this homework I learned
@@ -155,5 +160,5 @@ function blog(id) {
             </li>
             </ul> -->
             `;
-            document.getElementById(id).innerHTML = content;
+        document.getElementById(id).innerHTML = content;
 }
