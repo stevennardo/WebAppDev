@@ -16,6 +16,8 @@
         list.add(loggedOnWebUser);
         out.print(gson.toJson(list).trim());
     } else {
-        out.print("No user is logged on");
+        list.dbError = "No user is logged on"; //Add something to the list error msg so we can check it in profile.js 
+        out.print(gson.toJson(list).trim());
     }
+    //I just got rid of the above code so this ajax call returns nothing if there is no session
 %>

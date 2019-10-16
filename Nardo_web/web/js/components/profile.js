@@ -30,6 +30,8 @@ function profile(id)
         if (user === null)
         {
             document.getElementById("loginInfo").innerHTML = "Invalid Credentials";
+        } else if (user.dbError.length > 0) { //Check to see whether there is something in the dbError
+            console.log("No users logged in");
         } else
         {
             var msg = "Found Web User " + user.webUserList[0].webUserId;

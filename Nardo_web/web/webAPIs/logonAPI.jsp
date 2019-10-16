@@ -32,6 +32,7 @@
             }
             else
             {
+                //console.log(list);
                 session.setAttribute("webUser", list);
             }
         }
