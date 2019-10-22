@@ -33,9 +33,9 @@ function user(id)
             newList[i].birthday = dataList[i].birthday;
             newList[i].membershipFee = dataList[i].membershipFee;
             newList[i].userRoleType = dataList[i].userRoleType;
+            newList[i].delete = "<img src='pics/delete.png' alt='delete icon' onclick='user.delete(" + newList[i].webUserId + ",this)'  />";
         }
 
-        console.log(newList);
 
         makeTable({
             dataList: newList,
@@ -46,4 +46,42 @@ function user(id)
             reverse: true
         });
     }
+
+    user.delete = function (userId, icon) {
+        if (confirm("Do you really want to delete user " + userId + "? ")) {
+            console.log("icon that was passed into JS function is printed on next line");
+            console.log(icon);
+
+            // HERE YOU HAVE TO CALL THE DELETE API and the success function should run the 
+            // following (delete the row that was clicked from the User Interface).
+            /* users.delete(), so that it calls the Delete Web API - but only if the user 
+             * confirms they really want to delete. If there is an error (e.g., can't delete 
+             * record because of some error like cannot delete this user because some "other" 
+             * record points to it), write a message to the page. Test to be sure that the delete 
+             * function does NOT delete a row from the HTML table unless the delete API call successfully deleted a record.*/
+
+            ajax2({
+                url: "webAPIs/deleteUserAPI.jsp?deleteId=" + userId,
+                successFn: success,
+                errorId: userId
+            });
+
+            function success(obj)
+            {
+                if (obj.dbError !== null) {
+                    alert("Database Error Encountered: user could not be deleted due to associative record.");
+                    return;
+                } else
+                {
+                    console.log("deleted");
+                    var dataRow = icon.parentNode.parentNode;
+                    var rowIndex = dataRow.rowIndex - 1; // adjust for column header row?
+                    var dataTable = dataRow.parentNode;
+                    dataTable.deleteRow(rowIndex);
+                }
+
+
+            }
+        }
+    };
 }
