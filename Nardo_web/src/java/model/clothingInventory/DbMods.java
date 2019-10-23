@@ -39,7 +39,7 @@ public class DbMods {
     public static String delete(String itemId, DbConn dbc) {
 
         if (itemId == null) {
-            return "Error in model.clothingInventory.DbMods.delete: cannot delete inventory record because 'userId' is null";
+            return "Error in model.clothingInventory.DbMods.delete: cannot delete inventory record because 'itemId' is null";
         }
 
         // This method assumes that the calling Web API (JSP page) has already confirmed 

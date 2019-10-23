@@ -31,7 +31,7 @@ function inventory(id)
             newList[i].description = dataList[i].description;
             newList[i].color = dataList[i].color;
             newList[i].discount = dataList[i].discount;
-            newList[i].delete = "<img src='pics/delete.png' onclick='inventory.delete(" + newList[i].webUserId + ",this)' />";
+            newList[i].delete = CRUD_icons.delete + "' alt='delete icon' style='width:15px; text-align: center' onclick='inventory.delete(" + newList[i].itemId + ",this)";
         }
 
         console.log(newList);
@@ -65,6 +65,7 @@ function inventory(id)
                 successFn: success,
                 errorId: itemId
             });
+            //
 
             function success(obj)
             {

@@ -33,7 +33,7 @@ function user(id)
             newList[i].birthday = dataList[i].birthday;
             newList[i].membershipFee = dataList[i].membershipFee;
             newList[i].userRoleType = dataList[i].userRoleType;
-            newList[i].delete = "<img src='pics/delete.png' alt='delete icon' onclick='user.delete(" + newList[i].webUserId + ",this)'  />";
+            newList[i].delete = CRUD_icons.delete + "' alt='delete icon' style='width:15px; text-align: center' onclick='user.delete(" + newList[i].webUserId + ",this)";
         }
 
 
@@ -45,6 +45,7 @@ function user(id)
             textFilter: document.getElementById("userInput"),
             reverse: true
         });
+
     }
 
     user.delete = function (userId, icon) {
