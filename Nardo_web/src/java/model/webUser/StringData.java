@@ -18,6 +18,7 @@ public class StringData {
     public String webUserId = "";
     public String userEmail = "";
     public String userPassword = "";
+    public String userPassword2 = "";
     public String birthday = "";
     public String membershipFee = "";
     public String image = "";
@@ -47,7 +48,7 @@ public class StringData {
     }
 
     public int getCharacterCount() {
-        String s = this.webUserId + this.userEmail + this.userPassword + this.birthday
+        String s = this.webUserId + this.userEmail + this.userPassword + this.userPassword2 + this.birthday
                 + this.membershipFee + this.image + this.userRoleId + this.userRoleType;
         return s.length();
     }
@@ -56,6 +57,7 @@ public class StringData {
         return "Web User Id:" + this.webUserId
                 + ", User Email: " + this.userEmail
                 + ", User Password: " + this.userPassword
+                + ", User Password 2: " + this.userPassword2
                 + ", Birthday: " + this.birthday
                 + ", Membership Fee: " + this.membershipFee
                 + ", Image: " + this.image

@@ -66,7 +66,7 @@
                 <div class="dropdown">
                     <a class="dropHeader header" onclick="dropdown('accountDropdown')">Account</a>
                     <div class="dropContent" id="accountDropdown">
-                        <a href="#/register">Register</a> <br/>
+                        <a href="#/insertUser">Register</a> <br/>
                         <a href="#/logon">Log On</a> <br/>
                         <a href="#/profile">Profile</a> <br/>
                         <a href="#/logoff">Log Off</a> 
@@ -75,6 +75,7 @@
                 <div class="dropdown">
                     <a class="dropHeader header" onclick="dropdown('clothesDropdown')">Clothes</a>
                     <div class="dropContent" id="clothesDropdown">
+                        <a href="#/insertInventory">Insert Inventory</a> <br/>
                         <a>Tops</a> <br/>
                         <a>Bottoms</a> <br/>
                         <a>Accessories</a> <br/>
@@ -117,6 +118,10 @@
         <script src="js/components/logon.js"></script>
         <script src="js/components/profile.js"></script>
         <script src="js/components/logoff.js"></script>
+        <script src="js/components/insertUser.js"></script>
+        <script src="js/components/insertInventory.js"></script>
+        <script src="js/components/userCRUD.js"></script>
+        <script src="js/components/inventoryCRUD.js"></script>
 
         <script>
 
@@ -133,7 +138,8 @@
                         myRoutes['/logon'] = logon;
                         myRoutes['/profile'] = profile;
                         myRoutes['/logoff'] = logoff;
-                        //myRoutes['/register'] = register;
+                        myRoutes['/insertUser'] = insertUser;
+                        myRoutes['/insertInventory'] = insertInventory;
                          
                          
 

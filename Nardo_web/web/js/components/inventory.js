@@ -6,7 +6,11 @@
 
 function inventory(id)
 {
-    var content = `<p style="text-align:center">
+    var content = `
+                <div style="text-align:center">
+                        <h2 style="display: inline-block">Inventory</h2><img style="display: inline-block" id="insertImg" width="15" src="pics/insert.png">
+                </div>
+                <p style="text-align:center">
                     Inventory Filter: <input id= "inventoryInput" type="text"/>
                 </p> <div id="inventoryTable"> </div>`;
 
@@ -33,6 +37,10 @@ function inventory(id)
             newList[i].discount = dataList[i].discount;
             newList[i].delete = CRUD_icons.delete + "' alt='delete icon' style='width:15px; text-align: center' onclick='inventory.delete(" + newList[i].itemId + ",this)";
         }
+        
+         document.getElementById("insertImg").onclick = function () { // you cant pass input params directly into an event handler
+            window.location.hash = "#/insertInventory";
+            };
 
         console.log(newList);
 

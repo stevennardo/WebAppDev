@@ -95,13 +95,13 @@ var content = `
             <p>
             To use the account tab, valid credentials are email: user1@email.com and password: p
             </p>
-    <!--
+    
             <h2> HW 7 Log On </h2>
             <p>
             In this homework I learned
             < em > [if you chose option A, Log On & amp; Update HW] < /em> ... 
-            The parts that I found easy were...
-            The parts that I found hard or confusing were...
+            The parts that I found easy were moving the code we did in the lab assignment as well as doing the code in lab.
+            The parts that I found hard or confusing were taking note of the error messages and fixing the errors.
             </p>
             <ul>
             <li>
@@ -113,9 +113,9 @@ var content = `
 
             <h2> HW 8 Insert </h2>
             <p>
-            In this homework I learned...
-            The parts that I found easy were...
-            The parts that I found hard or confusing were...
+            In this homework I learned what it takes to send data to a database and the SQL involved.
+            The parts that I found easy were using the insert code to then create the form for my other table.
+            The parts that I found hard or confusing were making sure everything worked and was inputted correctly.
             </p>
             <ul>
             <li>
@@ -123,10 +123,11 @@ var content = `
             user listing page - OR - click on the "register" item under the account icon.
             </li>
             <li>
-            To see how insert [other] works, click on the plus sign at the top of the
-            [other] listing page.
+            To see how insert inventory item works, click on the plus sign at the top of the
+            inventory listing page.
             </li>
             </ul>
+<!--
             <h2> HW 9 Update </h2>
             <p>
             In this homework I learned
