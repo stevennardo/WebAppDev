@@ -52,15 +52,6 @@ function user(id)
             textFilter: document.getElementById("userInput"),
             reverse: true
         });
-        
-        console.log("ajax2");
-        
-        ajax2({
-            url: "webAPIs/getRolesAPI.jsp",
-            successFn: user.setRolePickList,
-            errorId: "userRoleIdError"
-        });
-
     }
 
     user.delete = function (userId, icon) {
@@ -98,58 +89,6 @@ function user(id)
 
 
             }
-        }
-    };
-
-    user.setRolePickList = function (jsonObj) {
-        
-        console.log(jsonObj);
-
-        if (jsonObj.dbError.length > 0) {
-            document.getElementById("userRoleIdError").innerHTML = jsonObj.dbError;
-            return;
-        }
-
-        /*  copy/pasting the first entry from the output of my get role API
-         {
-         "dbError": "",
-         "roleList": [
-         {
-         "userRoleId": "1",
-         "userRoleType": "Admin",
-         "errorMsg": ""
-         }, ...
-         */
-
-        user.makePickList({
-            id: "rolePickList",
-            list: jsonObj.roleList,
-            valueProp: "userRoleType",
-            keyProp: "userRoleId"
-        });
-
-    }; // setRolePickList
-
-    user.makePickList = function (params) {
-
-        if (!params.id || !params.list || !params.list[0] || !params.valueProp || !params.keyProp) {
-            alert("Utils.makePickList function requires a parameter object with all of these properties \n" +
-                    "id: id of existing select tag to be populated,\n" +
-                    "list: array of objects that hold the key/value pairs from which to populate the select tag,\n" +
-                    "valueProp: name of property (in array of objects) with the values to show in the pick list,\n" +
-                    "keyProp: name of property that holds keys (value of select tag after user clicks an option).\n");
-        }
-
-        // get reference to select tag that should already exist in the DOM
-        var selectList = document.getElementById(params.id);
-
-        for (var i in params.list) { // i iterates through all the elements in array list
-
-            // new Option(): first parameter is displayed option, second is option value. 
-            var myOption = new Option(params.list[i][params.valueProp], params.list[i][params.keyProp]);
-
-            // add option into the select list
-            selectList.appendChild(myOption);
         }
     };
 }

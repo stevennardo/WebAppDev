@@ -2,7 +2,7 @@
 
 <%@page language="java" import="dbUtils.*" %>
 <%@page language="java" import="model.role.*" %>  
-<%@page language="java" import="view.RoleView" %> 
+<%@page language="java" import="view.roleView" %> 
 <%@page language="java" import="com.google.gson.*" %>
 
 <%
@@ -15,7 +15,7 @@
     if (list.dbError.length() == 0) { // if got good DB connection,
 
         System.out.println("*** Ready to call allRolesAPI");
-        list = RoleView.allRolesAPI(dbc);  
+        list = roleView.allRolesAPI(dbc);  
     } 
 
     // PREVENT DB connection leaks:
