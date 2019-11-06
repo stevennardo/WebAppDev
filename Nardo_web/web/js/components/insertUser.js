@@ -51,14 +51,6 @@ var content = `
 
     `;
         document.getElementById(id).innerHTML = content;
-          
-        console.log("Get Roles API Call");
-        
-        ajax2({
-            url: "webAPIs/getRolesAPI.jsp",
-            successFn: insertUser.setRolePickList,
-            errorId: "userRoleIdError"
-        });
         
         insertUser.setRolePickList = function (jsonObj) {
 
@@ -113,4 +105,12 @@ var content = `
             selectList.appendChild(myOption);
         }
     };
+    
+    console.log("Get Roles API Call");
+        
+        ajax2({
+            url: "webAPIs/getRolesAPI.jsp",
+            successFn: insertUser.setRolePickList,
+            errorId: "userRoleIdError"
+        });
 }
