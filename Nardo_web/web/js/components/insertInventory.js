@@ -24,7 +24,7 @@ function insertInventory(id) {
                         <td id="itemCategoryError" class="error"></td> 
                     </tr>
                     <tr>
-                        <td>Imnage URL</td>
+                        <td>Image URL</td>
                         <td><input type="text"  id="imgUrl" /></td>
                         <td id="imgUrlError" class="error"></td>
                     </tr>
@@ -50,7 +50,7 @@ function insertInventory(id) {
                     </tr>
                     <tr>
                         <!-- see js/insertInventory.js to see the insertInventory function (make sure index.html references the js file) -->
-                        <td><button onclick="inventoryCRUD.insert()">Save</button></td>
+                        <td><button onclick="inventory.insert()">Save</button></td>
                         <td id="recordError" class="error"></td>
                         <td></td>
                     </tr>

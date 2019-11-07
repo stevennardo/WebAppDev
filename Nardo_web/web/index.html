@@ -121,7 +121,6 @@
         <script src="js/components/insertUser.js"></script>
         <script src="js/components/insertInventory.js"></script>
         <script src="js/components/userCRUD.js"></script>
-        <script src="js/components/inventoryCRUD.js"></script>
 
         <script>
 
@@ -132,7 +131,7 @@
                         myRoutes['/'] = home;  // home is a function stored in js/components/home.js
                         myRoutes['/home'] = home;
                         myRoutes['/blog'] = blog;
-                        myRoutes['/inventory'] = inventory;
+                        myRoutes['/inventory'] = inventory.show;
                         myRoutes['/user'] = user;
                         myRoutes['/showPage'] = showPage;
                         myRoutes['/logon'] = logon;
@@ -140,9 +139,9 @@
                         myRoutes['/logoff'] = logoff;
                         myRoutes['/insertUser'] = insertUser;
                         myRoutes['/insertInventory'] = insertInventory;
-                         
-                         
-
+                        
+                        myRoutes['/inventoryUpdate'] = function () {};
+                        
                         var parameters = {routeArray: myRoutes, contentId: "content"};
                         var myRoutes = routeFw(parameters);
 
