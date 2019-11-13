@@ -127,13 +127,11 @@ var content = `
             inventory listing page.
             </li>
             </ul>
-<!--
             <h2> HW 9 Update </h2>
             <p>
-            In this homework I learned
-            < em > [if you chose option A, Log On & amp; Update HW] < /em> ... 
-            The parts that I found easy were...
-            The parts that I found hard or confusing were...
+            In this homework I learned how to update a data entry in a database using user input
+            The parts that I found easy were using the existing code to create I/O pages and gettin ginput from the user.
+            The parts that I found hard or confusing were getting all the different files to work together seamlessly and have each then update successfully.
             </p>
             <ul>
             <li>
@@ -142,24 +140,11 @@ var content = `
                     search icon).
             </li>
             <li>
-            To see how update [other] works, click on the update icon next to a
-            record in my [other] listing.
+            To see how update inventory works, click on the update icon next to a
+            record in my inventory listing.
             </li>
             </ul>
-            <h2> Tutorial </h2>
-            <p>
-            By doing the tutorial < em > [if you chose option B, the tutorial] < /em> 
-            I learned...
-            The parts that I found easy were...
-            The parts that I found hard or confusing were...
-            </p>
-
-            <ul>
-            <li>
-            To see my tutorial, click on "proposal", "demo", and "log" under the tutorial icon
-            in the navigation bar.
-            </li>
-            </ul> -->
+            
             `;
         document.getElementById(id).innerHTML = content;
 }
